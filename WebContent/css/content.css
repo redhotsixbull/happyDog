@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+/* ****************** 공통 컨텐츠 클래스 ********************** */
+#content-wrapper{padding:100px 0;}
+.comm-content-tit{position:relative; font-size:26px; color:#2b2b2b; text-align:center; font-weight:500; padding:20px 0; margin-bottom:50px;}
+.comm-content-tit:after{display:block; content:""; width:50px; height:4px; background-color:rgba(254,67,30); position:absolute; bottom:0; left:50%; margin-left:-30px;}
+
+/* 공통 :: PAGING */
+.paging{width:100%; text-align:center; margin:30px 0;}
+.paging a, .paging span{display:inline-block; vertical-align:middle; width:30px; height:30px; border:1px solid #ddd; text-align:center; font-size:12px; line-height:30px; color:#868686; letter-spacing:-0.25px; margin: 2px 0; background:#fff;}
+.paging .cur{border:1px solid #4b4b4b; background-color:#4b4b4b; color:#fff;}
+.paging a.paging-arrow{line-height:28px;}
+.paging i{vertical-align:middle; color:inherit}
+
+/* 공통 :: SEARCH BOX */
+.board-search-box{text-align:center; background-color:#f9f9f9; padding:30px 0; border:1px solid #ddd; }
+.board-search-box select{width:20%; max-width:150px; height:40px; border:1px solid #ccc; background-color:#fff; }
+.board-search-box .search-word{width:30%; max-width:200px; height:40px; border:1px solid #ccc; border-right:0; padding:0; text-indent:10px; color:#868686; font-size:13px; vertical-align:middle;}
+.board-search-box .search-word:focus{color:#333;}
+.board-search-box .bbs-search-btn{margin:0px; border:0; min-width:40px; padding:0 5px; height:40px; margin-left:-4px; background:#333; color:#fff; cursor:pointer; vertical-align:top; font-size:14px;}
+.board-search-box .bbs-search-btn i{line-height:40px;}
+
+
+/* ****************** 봉사활동 등록 폼 ********************** */
+.common-tbl-box{padding:70px 50px; background-color:#f8f8f8;}
+.comm-tbl{width:100%; max-width:800px; margin:0 auto; background-color:#fff;}
+.comm-tbl th, .comm-tbl td{border:1px solid #ddd; padding:15px; text-align:left; font-weight:normal; line-height:20px;}
+.comm-tbl tr:first-child th, .comm-tbl tr:first-child td{border-top:2px solid rgba(254,67,30);}
+.comm-tbl th{font-size:17px; line-height:20px; font-weight:500;}
+.comm-tbl input[type='text'], .comm-tbl input[type='password'], .comm-tbl input[type='file'],
+.comm-tbl select, .comm-tbl textarea{padding:7px; border:1px solid #ddd; border-radius:4px; width:90%;}
+.comm-tbl input[type='text'].short, .comm-tbl input[type='password'].short, .comm-tbl input[type='file'].short{width:30%;}
+.comm-tbl select.middle{width:40%;}
+.comm-tbl .comment{padding-top:5px; font-size:12px; color:#888;}
+.comm-tbl .none{padding:40px 0; font-size:16px;}
+.comm-tbl.type2{width:100%; max-width:none;}
+.comm-tbl.type2 th, .comm-tbl.type2 td{padding:10px;}
+.comm-tbl.type2 tr:first-child td{border-top:1px solid #ddd;}
+.comm-tbl.type2 th{text-align:center; font-size:16px; border-top:2px solid rgba(254,67,30);}
+.comm-tbl.type2 td{color:#2b2b2b; font-size:14px; text-align:center;}
+.comm-tbl.type2 tr:hover td{background-color:rgba(254,67,30,0.05);}
+/* 주문 */
+.comm-tbl.order-tbl th{font-size:16px; background:#f8f8f8;}
+.comm-tbl.order-tbl input[type='text'], .comm-tbl.order-tbl input[type='password'], .comm-tbl.order-tbl input[type='file'],
+.comm-tbl.order-tbl select{height:28px; font-size:15px;}
+.comm-tbl.order-tbl input[type='text'].middle, .comm-tbl.order-tbl input[type='password'].middle, 
+.comm-tbl.order-tbl input[type='file'].middle, .comm-tbl.order-tbl select.middle{width:50%;}
+.comm-tbl.order-tbl input[type='text'].short, .comm-tbl.order-tbl input[type='password'].middle, 
+.comm-tbl.order-tbl input[type='file'].short, .comm-tbl.order-tbl select.short{width:20%;}
+
+.necessary.join{text-align:right; margin-bottom:10px;}
+.star.join{color:rgba(254,67,30); font-size:15px;}
+
+.common-tbl-btn-group{padding-top:30px; text-align:center;}
+.common-tbl-btn-group.join-btn-group{display:inline-block; text-align:right; padding-top:0; width:auto; max-width:20%; vertical-align:middle;}
+.common-tbl-btn-group > button{width:130px; height:50px; border-radius:5px; font-size:17px; color:#fff; margin:0 10px;}
+.common-tbl-btn-group > button.btn-style1{background-color:rgba(254,67,30);}
+.common-tbl-btn-group > button.btn-style2{background-color:#444;}
+.common-tbl-btn-group > button.btn-style3{background-color:#888;}
+.common-tbl-btn-group > button.small{width:100px; height:35px; font-size:15px;}
+.comm-tbl .file-del-btn{height:30px; padding:0 10px; border-radius:5px; background-color:#888; color:#fff; margin-left:5px;}
+
+/* 봉사활동 신청 List */
+.volun-tit{max-width:385px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; text-align:left;}
+.volun-tit a{color:#2b2b2b;}
+.volun-tit:hover a{font-weight:500;}
+.volun-status{display:inline-block; padding:7px 0; width:70px; border-radius:7px; color:#fff;}
+.volun-status.ing{background-color:blue;}
+.volun-status.end{background-color:#444;}
+
+/* 봉사활동 View */
+.voluntary-box{}
+.comm-tbl.view{width:100%; max-width:none;}
+.comm-tbl .hidden{display:none;}
+.voluntary-top-box{}
+.volun-view-tit, .volun-view-sub-tit{padding:0 10px;}
+.volun-view-tit{font-size:24px; line-height:32px; margin-bottom:7px;}
+.volun-view-sub-tit{font-size:14px; line-height:20px; font-weight:400;}
+.volun-view-sub-tit > span, .volun-view-sub-tit > span b{display:inline-block; margin-right:7px; color:#888;}
+.volun-view-sub-tit > span b{color:#333; font-weight:500;}
+.voluntary-bottom-box{padding:30px 0;}
+.voluntary-bottom-inner{padding:50px 0; background-color:#f5f5f5;}
+
+/* 해당 공고에 봉사활동 신청한 사람 목록 */
+.sub-title{font-size:20px; color:#2b2b2b; font-weight:500; padding:20px 0; margin-bottom:30px; position:relative;}
+.sub-title:after{display:block; content:""; width:35px; height:3px; background:rgba(254,67,30); position:absolute; bottom:0; left:0;}
+
+/* ****************** MODAL LAYERPOPUP ********************** */
+/* modal layer */
+.modal-fixed-pop-wrapper{display:none; overflow-y:scroll; overflow-x:hidden;  position:fixed; top:0px; left:0px; width:100%; height:100%; z-index:9999; background:#000; background:rgba(0,0,0,0.8);}
+.modal-fixed-pop-inner{position:absolute; display:table; width:100%; height:100%; text-align:center;}
+.modal-inner-box{ position:relative; display:table-cell; vertical-align:middle;}
+.modal-loading{position:absolute; top:50%; left:50%; margin:-25px 0 0 -25px; z-index:10000;}
+.modal-inner-content{text-align:left;}
+.loading-box{display:none; position:fixed; top:50%; left:50%;  margin:-25px 0 0 -25px; z-index:10000;}
+.loading {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 8px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+/* modal layer content */
+.modal-content{position:relative; width:96%; max-width:1000px; margin:20px auto; background-color:#fff; }
+.modal-content h1{height:60px; line-height:60px; font-size:24px; font-weight:600; letter-spacing:-0.5px; text-align:center; padding:0; background-color:#f36f21; color:#fff;}
+.modal-inner-con{padding:30px; }
+.modal-inner{overflow-y:auto; overflow-x:hidden; border:1px solid #ddd; }
+
+
+/* ****************** 전국 보호소 찾기 ********************** */
+#findShelterBox{}
+.find-shelter-left-box{float:left; width:800px;}
+.find-shelter-right-box{float:right; width:390px;}
+.find-shelter-right-box .map{margin:0 auto; width:218px; height:419px; background:url(/img/map_bg.png) no-repeat; position:relative;}
+.find-shelter-right-box .map > a{display:inline-block; width:18px; height:22px; background:url(/img/map_icon_2.png) no-repeat; background-position:0 -22px; position:absolute;}
+.find-shelter-right-box .map > a.on, .find-shelter-right-box .map > a:hover{background-position:0 0;}
+.find-shelter-right-box .map > a.on .loc-name, .find-shelter-right-box .map > a:hover .loc-name{display:block;}
+.find-shelter-right-box .map > a.loc1{left:30px; top:114px;} /*인천*/
+.find-shelter-right-box .map > a.loc2{left:51px; top:108px;} /*서울*/
+.find-shelter-right-box .map > a.loc3{left:53px; top:79px;} /*경기도*/
+.find-shelter-right-box .map > a.loc4{left:131px; top:102px;} /*강원도*/
+.find-shelter-right-box .map > a.loc5{left:35px; top:188px;} /*충청남도*/
+.find-shelter-right-box .map > a.loc6{left:72px; top:202px;} /*대전*/
+.find-shelter-right-box .map > a.loc7{left:91px; top:171px;} /*충청북도*/
+.find-shelter-right-box .map > a.loc8{right:39px; top:204px;} /*경상북도*/
+.find-shelter-right-box .map > a.loc9{left:55px; bottom:150px;} /*전라북도*/
+.find-shelter-right-box .map > a.loc10{left:30px; bottom:106px;} /*광주*/
+.find-shelter-right-box .map > a.loc11{left:60px; bottom:87px;} /*전라남도*/
+.find-shelter-right-box .map > a.loc12{left:124px; bottom:115px;} /*경상남도*/
+.find-shelter-right-box .map > a.loc13{left:28px; bottom:14px;} /*제주도*/
+.find-shelter-right-box .map > a.loc14{right:25px; bottom:105px;} /*부산*/
+.find-shelter-right-box .map > a.loc15{right:59px; bottom:152px;} /*대구*/
+.find-shelter-right-box .map > a.loc16{left:65px; top:180px;} /*세종시*/
+.find-shelter-right-box .map > a .loc-name{position:absolute; top:-51px; left:9px; display:none; width:74px; height:49px; background:url(/img/map_txt_2.png) no-repeat; text-align:center; line-height:25px; font-size:12px; color:#3e3e3e; font-weight:500; z-index:9;}
+.find-shelter-right-box .map > a.loc1 .loc-name,
+.find-shelter-right-box .map > a.loc3 .loc-name,
+.find-shelter-right-box .map > a.loc9 .loc-name,
+.find-shelter-right-box .map > a.loc10 .loc-name,
+.find-shelter-right-box .map > a.loc11 .loc-name{background:url(/img/map_txt_3.png) no-repeat; left:-65px;}
+.find-shelter-right-box .map > a.loc6 .loc-name,
+.find-shelter-right-box .map > a.loc12 .loc-name,
+.find-shelter-right-box .map > a.loc15 .loc-name{background:url(/img/map_txt_4.png) no-repeat; background-size:contain; left:13px; top:7px; width:70px; height:45px;}
+.find-shelter-right-box .map > a.loc12 .loc-name{top:15px;}
+.find-shelter-right-box .map > a.loc6 .loc-name > span,
+.find-shelter-right-box .map > a.loc12 .loc-name > span,
+.find-shelter-right-box .map > a.loc15 .loc-name > span{margin-top:37px;}
+.find-shelter-right-box .map > a .loc-name > span{display:inline-block; font-weight:normal; color:#7f7f7f;}
+
+/* ****************** 마이 페이지 ********************** */
+.mypage-tit{font-size:18px; line-height:24px; color:#333; font-weight:400;}
+.mypage-tit > b{font-size:20px; font-weight:600;}
+.mypage-box{text-align:center; padding:50px 0;}
+.mypage-box > li{display:inline-block; vertical-align:top; width:320px; border:1px solid #ddd; margin:0 20px 30px 20px;}
+.mypage-box > li > a{display:block; padding:15px;}
+.mypage-box > li > a .img-thum{margin-bottom:20px;}
+.mypage-box > li > a .img-thum > span{}
+.mypage-box > li > a .img-thum > span img{max-width:130px; margin:0 auto;}
+.mypage-box > li > a .txt-thum{}
+.mypage-box > li > a .txt-thum h4{font-size:18px; color:#333; font-weight:500; margin-bottom:10px;}
+.mypage-box > li > a .txt-thum p{font-size:13px; line-height:16px; color:#888;}
+/* 마이페이지 관리자 Navi */
+.admin-navi{}
+
+/* ****************** 로그인 ********************** */
+.login-inner{max-width:65%; margin:0 auto 30px;}
+.login-inner .login-tbl-box{float:left; width:72%;}
+.login-inner .login-tbl-box .login-tbl{max-width:none;}
+.comm-tbl.login-tbl th, .comm-tbl.login-tbl td{border-left:0; border-right:0;}
+.login-inner .login-btn-box{float:right; width:23%;}
+.login-inner .login-btn-box .login-btn{display:block; width:100%; height:134px; color:#fff; font-size:20px; border-radius:5px; background-color:rgba(254,67,30);}
+.login-inner .login-btn-box.type2{float:none; width:auto; padding-top:20px; text-align:center;}
+.login-inner .login-btn-box.type2 .login-btn{max-width:50%; height:50px; margin:0 auto;}
+.login-util-box{text-align:center;}
+.login-util-box > span{display:inline-block; vertical-align:middle; margin:0 15px;}
+.login-util-box > span a{display:inline-block; padding:5px; font-size:16px; line-height:20px; color:#2d2d2d;}
+
+/* ****************** 이용약관 ********************** */
+.terms-tit{font-size: 18px;margin-bottom: 20px;font-weight:500;}
+.terms-tit > span{color : #5cc2e4; margin-right:5px;}
+.terms-box{height:250px; border:1px solid rgba(254,67,30); background:#fff; padding:20px; font-size:13px; line-height:25px; overflow-y:scroll;}
+.terms-chk{margin-bottom:50px; padding-top:15px; font-size:14px; line-height:18px;}
+.terms-tab-list{height:50px; text-align:center; line-height:50px;}
+.terms-tab-list > .t_mid{float:left; width:calc(100%/3); height:50px; background:#fff;}
+.terms-tab-list > .t_mid:hover{cursor:pointer;}
+.terms-tab-list > .t_mid > h2{font-size:17px; font-weight:500;}
+.terms-tab-con{border:1px solid rgba(254,67,30); height:250px; overflow-y:scroll; background:#fff;}
+.terms-tab-con > .c_mid{ text-align:left; line-height:25px; padding:20px;}
+
+/* ****************** 회원가입 :: 타입 선택 ********************** */
+.join-type-container{}
+.join-type-container > .join-type-box{float:left; width:50%; text-align:center;}
+.join-type-con{}
+.join-type-con > button{}
+.join-type-con > button span{display:block; width:300px; height:300px; border:4px solid #ddd; border-radius:100%; line-height:250px; transition:all 0.4s;}
+.join-type-con > button img{width:200px; margin-top:50px;}
+.join-type-con > button p{font-size:20px; line-height:30px; color:#2d2d2d; font-weight:500; padding-top:20px;}
+.join-type-con > button:hover span{border-color:rgba(254,67,30);}

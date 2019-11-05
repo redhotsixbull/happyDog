@@ -1,0 +1,145 @@
+
+/* productList.jsp */
+.product-list .product {
+	float: left;
+	width: 30%;
+	text-align: center;
+	cursor: pointer;
+	margin-left:5%;
+}
+.product-list .product:first-child, .product-list .product:nth-child(3n+1){margin-left:0;}
+.product-list .product .product-inner{}
+.product-list .product .prd-img-thum{position:relative; padding-top:100%; border:1px solid #ddd; overflow:hidden;}
+.product-list .product .prd-img-thum > span{position:absolute; top:0; left:0; bottom:0; right:0; transition:all 0.5s;}
+.product-list .product:hover .prd-img-thum > span{transform:scale(1.1,1.1); transition:all 0.5s;}
+.product-list .product .prd-img-thum > span img{max-width:100%;}
+.product-list .product .prd-txt-thum{padding:15px 0; text-align:left;}
+.product-list .product .prd-txt-thum h3{font-size:18px; line-height:30px; color:#2b2b2b; font-weight:500; width:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; margin-bottom:5px;}
+.product-list .product:hover .prd-txt-thum h3{color:rgba(254,67,30);}
+.product-list .product .prd-txt-thum .price{font-size:13px; line-height:20px; margin-bottom:5px;}
+.product-list .product .prd-txt-thum .price b{font-weight:500; font-size:16px; margin-left:3px;}
+.product-list .product .prd-txt-thum .txt{font-size:13px; line-height:18px; color:#888; max-height:36px; overflow:visible;}
+
+
+/* productDetail.jsp */
+.product .product-top{margin-bottom:30px;}
+.product .product-top .product-img {float:left; width:45%; text-align: center;}
+.product .product-top .product-img > img{max-width:100%;}
+.product .product-top .product-info{float:right; width:53%; border:1px solid #ddd;}
+
+.product .product-info .info-inner {padding:15px;}
+.product .product-info .info-inner .title{font-size:35px; line-height:50px; color:#2d2d2d; font-weight:600; margin-bottom:20px;}
+.product .product-info .info-inner .detail{font-size:14px; line-height:24px; min-height:96px; margin-bottom:40px; }
+.product .product-info .info-inner .price,
+.product .product-info .info-inner .option{font-size:14px; line-height:24px; text-align:left;}
+.product .product-info .info-inner .price{margin-bottom:15px;}
+.product .product-info .info-inner .price.type2{text-align:right; padding-top:10px;}
+.product .product-info .info-inner .price > span{display:inline-block;}
+.product .product-info .info-inner .price > span:first-child{margin-right:10px;}
+.product .product-info .info-inner .price b{font-size:26px; line-height:34px; margin-left:10px;}
+.product .product-info .info-inner .option{font-size:16px; line-height:36px; margin-bottom:5px;}
+.product .product-info .info-inner .option > input[type="text"]{padding:7px; line-height:20px; border-radius:4px; border:1px solid #ddd; width:165px; margin-left:10px;}
+.product .product-info .info-inner .order-btn-box{padding-top:5px; text-align:right;}
+.product .product-info .info-inner .order-btn-box > button{width:100%; height:60px; background-color: rgba(254,67,30); color: white; font-size: 20px;border-radius:4px;}
+
+
+.product .order-btn, .pay .order-btn, .order-success .order-btn, .find-order .order-btn{
+	width: 200px;
+	height: 65px;
+	background-color: rgba(254,67,30);
+	color: white;
+	font-size: 20px;
+	border-radius:5px;
+}
+
+.product .tab > a {
+	display: inline-block;
+	float: left;
+	height: 60px;
+	width: 50%;
+	border: 1px solid rgba(254,67,30);
+	border-left:0;
+	box-sizing: border-box;
+	line-height: 60px;
+	text-align: center;
+	font-size: 20px;
+	background:#fff;
+	color:#2d2d2d;
+	transition:all 0.4s;
+}
+.product .tab > a:first-child{border-left:1px solid rgba(254,67,30); border-radius:5px 0 0 5px;}
+.product .tab > a:last-child{border-radius:0 5px 5px 0;}
+.product .tab a:hover {
+	background:rgba(254,67,30);
+	color: #fff;
+	transition:all 0.4s;
+}
+
+.product .product-bottom{
+	padding: 60px 0;
+	text-align: center;
+	
+}
+.product .product-bottom .se_textarea{font-size: 16px; line-height:24px;}
+.product .product-bottom img{max-width:100%; margin-bottom:15px;}
+
+.right{
+	text-align: right;	
+}
+
+
+/* 주문서 작성 :: orderForm.jsp */
+.order-form{padding:30px 0;}
+.order-form .order-product-tbl th, .order-form .order-product-tbl td{border-left:0; border-right:0; color:#2d2d2d;}
+.order-form .order-product-tbl th{background:#f8f8f8; font-size:17px; padding:13px 10px;}
+.order-form .order-product-tbl td{font-size:16px; font-weight:500;}
+.order-form .order-product-tbl tr:hover td{background:#fff;}
+
+.order-form .order {margin:70px 0;}
+.order-form .delivery{margin-bottom:70px;}
+.order-form .necessary{text-align:right; margin-bottom:10px;}
+.order-form .star{color:rgba(254,67,30); font-size:15px;}
+.order-form .delivery-check{font-size:16px;}
+
+.order-form .order-tbl td.pay{font-size:15px;}
+.order-form .order-tbl td.pay-final{text-align:right; font-size:18px;}
+.order-form .order-tbl td.pay-final #total{font-size:22px; font-weight:600;}
+.order-form input.num {text-align: center;}
+.order-form select.phone {height: 45px;font-size: 17px;text-align: center;}
+.order-form input[type=radio] {
+	width: 15px;
+	height: 15px;
+	margin-top:0;
+}
+
+
+/* orderSuc.jsp */
+.order-success {text-align: center;}
+.order-success p.order-no{font-size: 17px;margin:20px 0;}
+.order-success p.order-no span{color:rgba(254,67,30);font-size: 20px; font-weight: bold;}
+.order-success button{margin-top: 50px;}
+.order-success input {width: 250px; height: 40px; font-size: 17px;}
+.order-success .phone {width: 73px;}
+
+
+/* findOrder.jsp */
+.find-order {text-align: center;}
+.find-order table {text-align: center;width:50%;margin:0 auto;}
+.find-order table td{height: 50px;font-size: 17px;}
+.find-order p.order-no{font-size: 17px;margin:20px 0;}
+.find-order button{margin-top: 50px;}
+.find-order input {padding:7px; line-height:25px; border-radius:4px; border:1px solid #ddd; width:300px; margin-left:10px;}
+.find-order .phone {width: 74px;}
+
+
+/* orderList.jsp */
+#orderListBox p.total{font-size: 17px;margin:20px 0;}
+#orderListBox input[type=radio]{width:20px;height: 20px;}
+#orderListBox .order-search{text-align: center; padding-left: 20px;}
+#orderListBox .search-day{width:30%; max-width:200px; height:40px; border:1px solid #ccc; padding:0; text-indent:10px; color:#868686; font-size:13px; vertical-align:middle;}
+
+/* myOrderList.jsp */
+#orderListBox .period{height: 30px; border-radius: 5px;vertical-align: middle; background-color: #666;}
+
+/* myOrder.jsp */
+.order-view tr.tr-title td{background-color: #f5f5f5; font-weight: bold; font-size: 15px;}

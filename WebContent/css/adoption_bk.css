@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/* ****************** 공통 컨텐츠 클래스 ********************** */
+#content-wrapper{padding:100px 0;}
+.comm-content-tit{position:relative; font-size:26px; color:#2b2b2b; lett-spacing:-0.5px; text-align:center; font-weight:500; padding:20px 0; margin-bottom:50px;}
+.comm-content-tit:after{display:block; content:""; width:50px; height:4px; background-color:rgba(254,67,30); position:absolute; bottom:0; left:50%; margin-left:-30px;}
+
+
+/* ****************** 방문예약 신청 폼 ********************** */
+/*.common-tbl-box{padding:70px 50px; background-color:#f5f5f5;}
+.comm-tbl{width:800px; margin:0 auto; background-color:#fff;}
+.comm-tbl th, .comm-tbl td{border:1px solid #ddd; padding:15px; text-align:left; font-weight:normal;}
+.comm-tbl tr:first-child th, .comm-tbl tr:first-child td{border-top:2px solid rgba(254,67,30);}
+.comm-tbl th{ font-size:17px; font-weight:500;}
+.comm-tbl input[type='text'], .comm-tbl input[type='password'], .comm-tbl select, .comm-tbl textarea{padding:7px; border:1px solid #ddd; border-radius:4px; width:90%;}
+.comm-tbl input[type='text'].short, .comm-tbl input[type='password'].short{width:30%;}
+
+.common-tbl-btn-group{padding-top:30px; text-align:center;}
+.common-tbl-btn-group > button{width:130px; height:50px; border-radius:5px; font-size:17px; color:#fff; margin:0 10px;}
+.common-tbl-btn-group > button.btn-style1{background-color:rgba(254,67,30);}
+.common-tbl-btn-group > button.btn-style2{background-color:#444;}*/
+.common-tbl-btn-group > button.btn-style10{width:125px; height:45px; border-radius:5px; font-size:15px; color:#fff; margin:0;background-color:rgba(254,67,30);}
+.common-tbl-box .necessary{text-align:right; margin-bottom:10px;}
+#reservForm .star{color:rgba(254,67,30); font-size:15px;}
+
+/* ****************** dogInfo.jsp 폼 ********************** */
+.common-box{padding:70px 50px;background-color:#f5f5f5;}
+.common-tbl-btn-group.type2 > button.btn-style10{display:none;}
+.view-detail{text-align:center;}
+.common-tbl-btn-group.type20 > button.btn-style20{width:125px; height:45px; border-radius:5px; font-size:15px; color:#fff; margin:0;background-color:rgba(254,67,30);}
+
+/*.care-location{width:1200px;height:500px;}*/
+.care-location{width:100%; height:450px;}
+
+/* 입양하기 페이지 */
+.common-tbl-btn-group.type2{padding-top:0; text-align:right; margin-bottom:10px;}
+.dog-info-top-inner{}
+.dog-info-bottom-inner{padding-top:50px;}
+.dog-info-left{float:left; width:45%;}
+.dog-info-right{float:right; width:52%;}
+
+/* 유기견 리스트 페이지 */
+select{text-align:center;}
+.send-dogInfo{cursor:pointer;}
+.search-select{width:100%;margin-bottom:10px;}
+.search-select select{border:1px solid #ddd; border-radius:4px; /*width:19%;*/ width:calc(1140px/5); height:35px; font-size:15px;}
+.bbs-search-btn{border-radius:4px;margin:0px; border:0; min-width:40px; padding:0 5px; height:35px; margin-left:3px; background:#333; color:#fff; cursor:pointer; vertical-align:top; font-size:14px;}
+#emptyNotice{padding-top:30px;padding-bottom:30px;font-size:25px;text-align:center;}
+
+/* 보호소 마이 페이지 */
+.search-selectDate{width:100%;margin-bottom:10px;}
+.search-selectDate .search-word{padding:7px; border:1px solid #ddd; border-radius:4px;}
+.search-selectDate .bbs-search-btn2{border-radius:4px;margin:0px; border:0; min-width:40px; padding:0 5px; height:35px; margin-left:3px; background:#333; color:#fff; cursor:pointer; vertical-align:top; font-size:14px;}
+
